@@ -1,0 +1,40 @@
+<h2 class="h3 mt-5 text-center font-weight-bold">
+  Ingresa los datos de tu articulo en el siguiente formulario
+</h2>
+
+<form action="/posts/create" id="create_posts">
+  <div class="form-group">
+    <label for="title">Titulo</label>
+    <input
+      name="title"
+      type="text"
+      class="form-control"
+      id="title"
+      placeholder="Ingresa tu titulo aqui"
+    />
+  </div>
+  <div class="form-group">
+    <label for="link">Link de foto</label>
+    <input
+      name="image_url"
+      type="url"
+      class="form-control"
+      id="link"
+      placeholder="Ingresa tu URL aqui"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="content">Contenido del articulo</label>
+    <textarea
+      name="content"
+      class="form-control"
+      id="content"
+      rows="3"
+      placeholder="Cuentanos de que trata tu post"
+    ></textarea>
+  </div>
+  <div class="text-right">
+    <button type="sumbit" class="btn btn-info mb-3">Submit</button>
+  </div>
+</form>

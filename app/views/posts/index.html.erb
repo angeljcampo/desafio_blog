@@ -1,0 +1,17 @@
+<div class="jumbotron jumbotron-fluid mt-3 bg-dark text-light">
+  <div class="container row ml-2">
+    <% @post.each do |post|%>
+
+    <div class="col-md-6 my-2 bg-light text-info">
+      <h2 class="text-center h1 text-dark"><%= post.title %></h2>
+      <p><%=post.content%></p>
+      <p class="text-muted h6"><%=post.created_at%></p>
+    </div>
+    <div class="col-md-6 my-2">
+      <a
+        ><img src="<%= post.image_url%>" class="img-fluid" alt="image_url"
+      /></a>
+    </div>
+    <%end%>
+  </div>
+</div>
