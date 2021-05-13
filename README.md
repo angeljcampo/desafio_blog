@@ -1,1 +1,1 @@
-Heroku link:
+Heroku link: Esta todo subido pero no me quiere correr el programa cuando lo abro por aca. Si pueden me ayudan a identificar el error. Dice "ActionController::RoutingError (No route matches [GET] "/"):"
